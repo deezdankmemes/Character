@@ -16,7 +16,17 @@ import java.awt.event.MouseEvent;
  */
 class CharacterEnvironmnet extends Environment {
 
+    
+    private Kirby kirby;
+    
+    
+    
+    
+    
     public CharacterEnvironmnet() {
+   
+    kirby = new Kirby(100, 100);
+    
     }
 
     @Override
@@ -41,6 +51,15 @@ class CharacterEnvironmnet extends Environment {
 
     @Override
     public void paintEnvironment(Graphics graphics) {
+    
+        if (kirby != null) {
+          kirby.draw(graphics);
+        }
+    
+    
+    
+    
+    
     }
     
 }
