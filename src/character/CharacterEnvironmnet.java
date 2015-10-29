@@ -16,17 +16,13 @@ import java.awt.event.MouseEvent;
  */
 class CharacterEnvironmnet extends Environment {
 
-    
     private Kirby kirby;
-    
-    
-    
-    
-    
+
     public CharacterEnvironmnet() {
-   
-    kirby = new Kirby(100, 100);
-    
+        kirby = new Kirby(100, 100, /* body*/ 450,/*body*/ 400, /*arm*/ 75,/*arm*/ 75,
+                /*foot*/ 100,/*foot*/ 75,/*eye*/ 36,/*eye*/ 60,/*whitepupul*/ 12,/*whitepupul*/ 12,
+                /*blackpupul*/ 30,/*blackpupul*/ 35,/*eyecolor*/ 30,/*eyecolor*/ 50,/*mouth*/ 30, /*mouth*/ 30,
+                /*tongue*/ 25,/*tongue*/ 25, /*cheek*/ 0, /*cheek*/ 0);
     }
 
     @Override
@@ -51,15 +47,11 @@ class CharacterEnvironmnet extends Environment {
 
     @Override
     public void paintEnvironment(Graphics graphics) {
-    
+
         if (kirby != null) {
-          kirby.draw(graphics);
+            kirby.draw(graphics);
         }
-    
-    
-    
-    
-    
+
     }
-    
+
 }
