@@ -42,13 +42,14 @@ public class Kirby {
     private int mouthHeight;
     private int tongueHieght;
     private int tongueWidth;
-private int cheekwidth;
-private int cheekHeight;
+    private int cheekwidth;
+    private int cheekHeight;
+
     public Kirby(int x, int y, int width, int height, int armWidth,
             int armHeight, int footWidth, int footHeight, int eyeWidth,
             int eyeHeight, int whitepupulWidth, int whitepupulHeight, int blackpupulWidth,
             int blackpupulHeight, int eyecolorWidth, int eyecolorHeight, int mouthWidth,
-            int mouthHeight, int tongueWidth, int tongueHeight, int cheekWidth, int cheekHeight){
+            int mouthHeight, int tongueWidth, int tongueHeight, int cheekWidth, int cheekHeight) {
         this.x = x;
         this.y = y;
         this.width = width;
@@ -102,16 +103,18 @@ private int cheekHeight;
         graphics.setColor(Color.white);
         graphics.fillOval(x + (width * 26 / 160), y + (height * 31 / 80), whitepupulWidth, whitepupulHeight);
         graphics.fillOval(x + (width * 175 / 340), y + (height * 31 / 80), whitepupulWidth, whitepupulHeight);
-    //mouth
-        graphics.setColor(new Color (86,1,3));
+        //mouth
+        graphics.setColor(new Color(86, 1, 3));
         graphics.fillOval(x + (width * 51 / 160), y + (height * 52 / 80), mouthWidth, mouthHeight);
-        //tongue
+        graphics.setColor(Color.red);
+       
+//tongue
         graphics.setColor(Color.pink);
-        graphics.fillOval(x + (width * 883 / 2720), y + (height * 107 / 160), tongueWidth,tongueHieght );
+        graphics.fillOval(x + (width * 883 / 2720), y + (height * 107 / 160), tongueWidth, tongueHieght);
         //cheeks
-         graphics.setColor(Color.white);
-        graphics.fillOval(x + (width * 26 / 160), y + (height * 31 / 80), whitepupulWidth, whitepupulHeight);
-        graphics.fillOval(x + (width * 175 / 340), y + (height * 31 / 80), whitepupulWidth, whitepupulHeight);
+        graphics.setColor(new Color(255, 180, 196));
+        graphics.fillOval(x + (width * 16 / 160), y + (height * 43 / 80), cheekwidth, cheekHeight);
+        graphics.fillOval(x + (width * 157 / 340), y + (height * 43 / 80), cheekwidth, cheekHeight);
     }
 
 }

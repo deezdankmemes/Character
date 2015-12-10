@@ -18,7 +18,7 @@ public class Character {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-    ApplicationStarter.run("kirby", new CharacterEnvironmnet());
+        ApplicationStarter.run("kirby", new CharacterEnvironmnet());
     }
-    
+
 }

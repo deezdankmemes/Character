@@ -22,7 +22,7 @@ class CharacterEnvironmnet extends Environment {
         kirby = new Kirby(100, 100, /* body*/ 450,/*body*/ 400, /*arm*/ 75,/*arm*/ 75,
                 /*foot*/ 100,/*foot*/ 75,/*eye*/ 36,/*eye*/ 60,/*whitepupul*/ 12,/*whitepupul*/ 12,
                 /*blackpupul*/ 30,/*blackpupul*/ 35,/*eyecolor*/ 30,/*eyecolor*/ 50,/*mouth*/ 30, /*mouth*/ 30,
-                /*tongue*/ 25,/*tongue*/ 25, /*cheek*/ 0, /*cheek*/ 0);
+                /*tongue*/ 25,/*tongue*/ 25, /*cheek*/ 75, /*cheek*/ 50);
     }
 
     @Override
